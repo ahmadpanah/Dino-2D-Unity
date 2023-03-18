@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1375564109179171874}
+  - component: {fileID: -1659532565219279436}
   - component: {fileID: 1375564109179171885}
   - component: {fileID: 1375564109179171884}
-  - component: {fileID: 1375564109179171887}
+  - component: {fileID: 8061555238372898475}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Obstacle
@@ -33,6 +34,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1659532565219279436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375564109179171886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3226676864563ae4d90741a19fccd349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &1375564109179171885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99,29 +112,16 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: d73c640fadf8d8242b9780dc32d76c2a, type: 3}
   - {fileID: 21300000, guid: 1b808ae8ad32b534c883d8f1581d8f2f, type: 3}
---- !u!61 &1375564109179171887
-BoxCollider2D:
+--- !u!65 &8061555238372898475
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375564109179171886}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.10504836}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.92, y: 0.96}
-    newSize: {x: 0.92, y: 0.96}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.92, y: 0.7499032}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.92, y: 0.96, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
